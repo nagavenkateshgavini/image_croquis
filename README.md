@@ -4,7 +4,7 @@ An example python package which works as a command line tool as well as importab
 ## Installation
 
 ```bash
-pip install image-croquis
+$ pip install image-croquis
 ```
 
 ## Basic Usage
@@ -31,8 +31,7 @@ $ image_croquis --img-path <Specify the location of the image> --output-dir <Dir
 ###Example
 
 ```bash
-(venv3) users@system:$ image_croquis --img-path /home/users030/Downloads/car.jpeg --output-dir /tmp/
-Output image is saved in the specified path
+$ image_croquis --img-path /home/users030/Downloads/input.jpeg --output-dir /tmp/
 ```
 
 ### Output
@@ -44,7 +43,8 @@ Output image is saved in the specified path
 
 ## Importing
 
-users030@inflaps030:/tmp$ python3
+```python
+$ python3
 >>>
 >>> import image_croquis
 >>>
@@ -55,3 +55,4 @@ users030@inflaps030:/tmp$ python3
 Output image is saved in the specified path
 >>>
 >>>
+```
