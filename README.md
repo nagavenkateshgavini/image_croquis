@@ -28,13 +28,13 @@ optional arguments:
 $ image_croquis --img-path <Specify the location of the image> --output-dir <Directoy name where the output needs to be stored>
 ```
 
-###Example
+#### Example
 
 ```bash
 $ image_croquis --img-path /home/users030/Downloads/input.jpeg --output-dir /tmp/
 ```
 
-### Output
+#### Output
 
 |Input|Output|
 |-----|------|
@@ -44,7 +44,6 @@ $ image_croquis --img-path /home/users030/Downloads/input.jpeg --output-dir /tmp
 ## Importing
 
 ```python
-$ python3
 >>>
 >>> import image_croquis
 >>>
