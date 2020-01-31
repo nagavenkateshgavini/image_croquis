@@ -7,18 +7,29 @@ import cv2
 
 class ImageCroquis:
 
+    """
+    Returns a success message if everything goes well
+
+    >>> process = ImageCroquis("./images/input.jpeg", "/tmp/")
+    >>>
+    >>> process.run()
+    Output image is saved in the specified path
+    >>>
+    """
     def __init__(self, inp, otp_dir):
         self.inp_img = inp
         self.output_dir = otp_dir
 
     def run(self):
+        """
+        This is the main function which will process the image
+        """
         #read image
         image = cv2.imread(self.inp_img)
 
         #check if images exists
         if image is None:
             print("can not find image")
-            sys.exit()
 
         #convert to gray scale
         output = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

@@ -1,0 +1,15 @@
+language: python
+python:
+  - "3"
+install:
+  - pip3 install .
+script:
+  - python3 test.py
+  - echo "Tests are executed"
+deploy:
+  provider: pypi
+  user: venkat214
+  password:
+    secure: LHyjIC+kHOJP/f6ZbR5+qwr8XdLTTZvR3CHACMcoKPZ9O09qKkOf+u+Odbe6tLrwJlLvUMp+z+IFP0JuLMDWuIZX09K2ZAHR9KyG45lxXdztBmWPn44Pf3nKSsnu6o7D3j0XEIZZ6unf+ou1Q0HxIcoJWSYjIlps45lVEP3ztFJdnAWlnIFfLJ+6l5DpwBN8d/j1HippcEngMrraakY0tpZST7AHmMwYeMo0vn1OMFKYjgYg5HWn7ncyGL2L5KstkJr4tnzVnQRMxEMtRZ+FN9ZTq+7qHNr0HjdphYJ1nO3JSMJxndjD80GI8G0RE5kvouGVnXEh6UiOC2S4RQPkVc311zey6F5DhmIu+iH++bdFQc6iJmVWCouR7hL3YWZ3hX9orwWBHzMQiuUBeNeFYcbfIXKkoqQ7NoP5EzUlEqgIAL61pOddJvnYMvn5E1V85to2PW7iNIZyRYrZmLSnlIryGK57AZgjBAtvCH7oEjrbj39iO6+uiTknEHAYTVsj0lpOmiwaLUzo8jCHJ0Jmp5juKd8UgMJzqV7UJ5/Ja83eorCcM5Bnd/nWAZcyGqoICyqC6cBmnlfJ62fnqWNkmLjy/ZvR6l+Ie7hjlZ7hSwPxcSxxTD9AzsO5LqL+1POFw2beTgPcMQZOBV6Tnk9FQ+mFTC1R2aTxcMXyjlkl0us=
+  distributions: sdist bdist_wheel
+  skip_existing: true
