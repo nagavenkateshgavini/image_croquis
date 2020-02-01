@@ -15,4 +15,4 @@ deploy:
   skip_cleanup: true
   true:
     branch: master
-    tags: true
+    tags: false
