@@ -11,7 +11,7 @@ setup(
     # Needed for dependencies
     install_requires=['opencv-python'],
     # *strongly* suggested for sharing
-    version='0.0.5',
+    version='0.0.6',
     # The license can be anything you like
     license='MIT',
     description='An example of a python package with a basic use case',
