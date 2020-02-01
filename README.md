@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nagavenkateshgavini/image_croquis.svg?branch=master)](https://travis-ci.org/nagavenkateshgavini/image_croquis)
+
 # image_croquis
 An example python package which works as a command line tool as well as importable module with a basic use case
 
